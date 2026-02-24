@@ -1,4 +1,4 @@
-"""
+"""EX.41
 Exercises:
 Create a file with list of randomly generated email addresses.
 The email addresses must have domain name from the
@@ -59,4 +59,5 @@ with open ('./PYTHON_SECTION/Files/sample_files/random_email_addresses.txt', 'w'
     # emails.write(trans_emails)
 
 # Option 3 (short code)
+
     emails.write(',\n'.join(email_addresses))
