@@ -15,17 +15,18 @@ Discussion:
 # shut the program after the result
 import sys
 
-# Simple function, just asking a number with default argument
+# Simple function, just asking for a number with a default argument
 def users_num (text_input = "\nGive me a number: "):
     return int(input(text_input))
 
-# reusing the function and changing argument
+# reusing the function and changing the argument
 user_number = users_num("Your number is: ")
 
-# If prime, exit and print the message; If not prime, exit and print message.
+# If prime, exit and print the message; If not prime, exit and print the message.
 for i in range (2, user_number):
     if user_number % i != 0:
         continue 
     elif user_number % i == 0:
         sys.exit(f"\n{user_number} is not prime.\n")
+
 sys.exit(f"\n{user_number} is prime.\n")
