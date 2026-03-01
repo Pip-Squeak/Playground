@@ -10,8 +10,8 @@ For practice, write this code inside a function.
 import random
  
 
-# Users input will generate random list and prints the list
-# plus prints first element of the list and last element of the list
+# Users input will generate a random list and print the list
+# plus prints the first element of the list and the last element of the list
 def first_last_elem (txt_input = "Give a nuumber: ", num_len = 5):
     txt_input = int(input(txt_input))
     rand_list = random.sample(range(1, txt_input), num_len)
@@ -20,3 +20,4 @@ def first_last_elem (txt_input = "Give a nuumber: ", num_len = 5):
 
 
 first_last_elem("Type any number: ", 7)
+
