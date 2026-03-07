@@ -12,7 +12,7 @@ and another using sets.
 # list with dubs.
 list_a = [1, 2, 5, 2, 6, 9, 1, 35, 19, 2, 27, 99, 35]
 
-# Removing dublicates with for loop
+# Removing duplicates with a for loop
 def dub_remover_for_loop(list_with_dubs):
     list_without_dub = []
     for i in list_with_dubs:
@@ -30,3 +30,4 @@ def dub_remover_set(list_without_dubs):
 
 print("\n===Removing dublicates by set===")
 print(dub_remover_set(list_a))
+
