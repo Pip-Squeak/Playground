@@ -13,21 +13,22 @@ and another using sets.
 list_a = [1, 2, 5, 2, 6, 9, 1, 35, 19, 2, 27, 99, 35]
 
 # Removing duplicates with a for loop
-def dub_remover_for_loop(list_with_dubs):
-    list_without_dub = []
-    for i in list_with_dubs:
-        if i not in list_without_dub:
-            list_without_dub.append(i)
-    return list_without_dub
+def dup_remover_for_loop(list_with_dups):
+    list_without_dup = []
+    for i in list_with_dups:
+        if i not in list_without_dup:
+            list_without_dup.append(i)
+    return list_without_dup
 
-print("\n===Removing dublicates by for loop===")
-print(dub_remover_for_loop(list_a))
+print("\n===Removing duplicates by for loop===")
+print(dup_remover_for_loop(list_a))
 
-# Removing dublicates with sets
-def dub_remover_set(list_without_dubs):
-    dubless_list = set(list_without_dubs)
-    return dubless_list
+# Removing duplicates with sets
+def dup_remover_set(list_without_dups):
+    dupless_list = set(list_without_dups)
+    return dupless_list
 
-print("\n===Removing dublicates by set===")
-print(dub_remover_set(list_a))
+print("\n===Removing duplicates by set===")
+print(dup_remover_set(list_a))
+
 
