@@ -1,0 +1,25 @@
+from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+"""EX.19
+Print to the screen the full text of the article on this website: 
+http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture.
+The article is long, so it is split up between 4 pages.
+Your task is to print out the text to the screen so that you can read
+the full article without having to click any buttons.
+"""
+
+chrome_options = Options ()
+chrome_options.add_experimental_option('detach', True)
+driver = webdriver.Chrome(options = chrome_options)
+url = "https://www.vanityfair.com/style/society/2014/06/monica-lewinsky-humiliation-culture"
+
+driver.get(url)
+
+web_arcticles = driver.find_elements(By.CSS_SELECTOR, '[data-testid="SummaryItemHed"]')
+
+count = 0
+for a in web_arcticles:
+    count += 1
+    print(f"\n{count}. {a.text}\n")
